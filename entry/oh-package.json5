@@ -1,10 +1,10 @@
 {
   "name": "entry",
   "version": "1.0.0",
-  "description": "Please describe the basic information.",
+  "description": "本体实训平台 —— 基于知识图谱的本体建模与学习实训工具（HarmonyOS PC 单机版）。",
   "main": "",
-  "author": "",
-  "license": "",
+  "author": "JaneConan",
+  "license": "MIT",
   "dependencies": {}
 }
 

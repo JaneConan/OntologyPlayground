@@ -10,3 +10,18 @@
 /.clang-tidy
 **/.test
 /.appanalyzer
+
+# HarmonyOS / OpenHarmony signing materials (contain credentials; never commit)
+*.p12
+*.p7b
+*.cer
+*.csr
+*.key
+*.pem
+*.jks
+*.keystore
+harmony-config.json
+key.properties
+
+# User-supplied AI-generated / image assets staged by the user (not source-of-truth)
+material/
