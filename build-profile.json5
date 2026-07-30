@@ -1,0 +1,69 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/yaoshengwei/.ohos/config/default_OntologyPlayground_6-8zaK-_lWuiv6ZcBaHu4poQ3YsAdwA_pFmhG5h-P-Y=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BAA36D8BB7396EA4EEBB8E44C0BD57E3AB3C55FA4964F0C26DD0DF7A3E6657EF71CC7FCF7923BC8",
+          "profile": "/Users/yaoshengwei/.ohos/config/default_OntologyPlayground_6-8zaK-_lWuiv6ZcBaHu4poQ3YsAdwA_pFmhG5h-P-Y=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/yaoshengwei/.ohos/config/default_OntologyPlayground_6-8zaK-_lWuiv6ZcBaHu4poQ3YsAdwA_pFmhG5h-P-Y=.p12",
+          "storePassword": "0000001BEE435B08CF7BE0A930D99339431FBDC14526B029C19D23A666419B9CA7AAE324FEDEE116819790"
+        }
+      },
+      {
+        "name": "release",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "/Users/yaoshengwei/DevEcoStudioProjects/OntologyPlayground/OntologyPlayground.p12",
+          "storePassword": "00000022E374F64D41A612BA467A80400D6D990AF359A75FC173701BC16D0E2D244D96BF785AC6BBC1A8E0ACB8F908BA0755",
+          "keyAlias": "ontologyplayground",
+          "keyPassword": "000000227A797F089A573DE7808EAD01CC5C862C9AD0773F006CD2A92E37E585FCB00256EA351A5DF0C75DCE5AABB187D522",
+          "signAlg": "SHA256withECDSA",
+          "profile": "/Users/yaoshengwei/DevEcoStudioProjects/OntologyPlayground/OntologyPlaygroundRelease.p7b",
+          "certpath": "/Users/yaoshengwei/DevEcoStudioProjects/OntologyPlayground/OntologyPlayground.cer"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "release",
+        "targetSdkVersion": "6.0.0(20)",
+        "compatibleSdkVersion": "6.0.0(20)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
