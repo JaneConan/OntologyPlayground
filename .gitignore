@@ -23,5 +23,8 @@
 harmony-config.json
 key.properties
 
+# DevEco auto-signing config writes plaintext keyPassword/storePassword here — keep out of git
+/build-profile.json5
+
 # User-supplied AI-generated / image assets staged by the user (not source-of-truth)
 material/
